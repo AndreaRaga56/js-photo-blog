@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image:url(../img/cork.png);
+    background-repeat: 10;
+    background-size: 300px;
+}
+
 header{
     background-image:url(../img/wall.png);
     background-size: contain;
@@ -11,23 +17,27 @@ header{
 
 header h1{
     font-family: Edu TAS Beginner;
-    font-size: 96px;
+    font-size: 78px;
     margin: 0 auto;
-    width: 100%;
     text-align: center;
     padding: 10px 0px;   
     font-weight: 600; 
 }
 
-body{
-    background-image:url(../img/cork.png);
-    background-repeat: 10;
-    background-size: 250px;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 200px;
+    row-gap: 25px;
 }
 
 .ms-card{
-    width: 320px;
-    min-height: 360px;
+    width: 300px;
+    min-height: 340px;
     box-shadow: 10px 10px 15px rgba(43, 43, 43, 0.6);
     border-radius: 0px !important;
     position: relative;
@@ -49,5 +59,24 @@ section img{
     margin: 12px 15px 8px;
     font-family: Edu TAS Beginner;
     font-style: italic;
+}
 
+@media screen and (min-width: 768px){
+    main{
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    body{
+        background-size: 700px;
+    }
+
+    header{
+        background-size: 700px;
+    }
+
+    main{
+        max-width: 1200px;
+    }
 }
