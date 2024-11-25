@@ -1,14 +1,14 @@
 const mainElem = document.querySelector("main");
-let textHTML ='';
+let textHTML = '';
 
-axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>{
-    
-    for(let i=0; i<6; i++){
-        let titolo =resp.data[i].title;
+axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) => {
+
+    for (let i = 0; i < 6; i++) {
+        let titolo = resp.data[i].title;
         titolo = titolo[0].toUpperCase() + titolo.slice(1);
         console.log(titolo);
         let immagine = resp.data[i].url;
-        textHTML +=`
+        textHTML += `
         <div class="ms-card card">
             <div class="pin"> <img src="./img/pin.svg" alt=""></div>
             <section> <img src="${immagine}" alt=""></section>
@@ -16,7 +16,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then((resp) =>
         </div>
         `;
     }
-    mainElem.innerHTML=textHTML;
+    mainElem.innerHTML = textHTML;
 
 });
 

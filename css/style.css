@@ -1,30 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image:url(../img/cork.png);
+body {
+    background-image: url(../img/cork.png);
     background-repeat: 10;
     background-size: 300px;
 }
 
-header{
-    background-image:url(../img/wall.png);
+header {
+    background-image: url(../img/wall.png);
     background-size: contain;
 }
 
-header h1{
+header h1 {
     font-family: Edu TAS Beginner;
     font-size: 78px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0px;   
-    font-weight: 600; 
+    padding: 10px 0px;
+    font-weight: 600;
 }
 
-main{
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,7 +35,7 @@ main{
     row-gap: 25px;
 }
 
-.ms-card{
+.ms-card {
     width: 300px;
     min-height: 340px;
     box-shadow: 10px 10px 15px rgba(43, 43, 43, 0.6);
@@ -43,48 +43,48 @@ main{
     position: relative;
 }
 
-.pin{
+.pin {
     position: absolute;
     top: -3%;
     right: 50%;
     transform: translateX(50%);
 }
 
-section img{
+section img {
     padding: 15px 15px 0px;
     max-width: 100%;
 }
 
-.desc{
+.desc {
     margin: 12px 15px 8px;
     font-family: Edu TAS Beginner;
     font-style: italic;
 }
 
-@media screen and (min-width: 768px){
-    main{
+@media screen and (min-width: 768px) {
+    main {
         gap: 25px;
     }
 
-    .desc{
+    .desc {
         font-size: 21px;
     }
 }
 
-@media screen and (min-width: 1280px){
-    body{
+@media screen and (min-width: 1280px) {
+    body {
         background-size: 700px;
     }
 
-    header{
+    header {
         background-size: 700px;
     }
 
-    main{
+    main {
         max-width: 1200px;
     }
 
-    .desc{
+    .desc {
         font-size: 24px;
     }
 }
