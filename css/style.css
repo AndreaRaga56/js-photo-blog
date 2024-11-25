@@ -65,6 +65,10 @@ section img{
     main{
         gap: 25px;
     }
+
+    .desc{
+        font-size: 21px;
+    }
 }
 
 @media screen and (min-width: 1280px){
@@ -78,5 +82,9 @@ section img{
 
     main{
         max-width: 1200px;
+    }
+
+    .desc{
+        font-size: 24px;
     }
 }
