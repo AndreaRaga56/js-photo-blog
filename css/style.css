@@ -1,9 +1,11 @@
+/* RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Layer grigio in trasparenza e in primo piano, flex */
 .over{
     position: fixed;
     z-index: 1;
@@ -18,25 +20,26 @@
     padding-top: 50px;
 }
 
+/* Immagine nell'over */
 .over img{
     max-width: 35%;
     min-width: 450px;
     margin-top: 50px;
 }
 
-
-
+/* Corpo con sfondo */
 body {
     background-image: url(../img/cork.png);
-    background-repeat: 10;
     background-size: 300px;
 }
 
+/* Titolo con sfondo */
 header {
     background-image: url(../img/wall.png);
     background-size: contain;
 }
 
+/* Font, dimensione, e posizione del titolo */
 header h1 {
     font-family: Edu TAS Beginner;
     font-size: 78px;
@@ -46,6 +49,7 @@ header h1 {
     font-weight: 600;
 }
 
+/* Flex dove inserire le card */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +61,7 @@ main {
     row-gap: 25px;
 }
 
+/* Dimensione e ombra cards */
 .ms-card {
     width: 300px;
     min-height: 340px;
@@ -65,6 +70,7 @@ main {
     position: relative;
 }
 
+/* Pin traslato */
 .pin {
     position: absolute;
     top: -3%;
@@ -72,18 +78,21 @@ main {
     transform: translateX(50%);
 }
 
+/* Immagine nella card */
 section img {
     margin: 0px;
     padding: 15px 15px 0px;
     max-width: 100%;
 }
 
+/* Testo della card */
 .desc {
     margin: 12px 15px 8px;
     font-family: Edu TAS Beginner;
     font-style: italic;
 }
 
+/* Responsive Tablet */
 @media screen and (min-width: 768px) {
     main {
         gap: 25px;
@@ -94,6 +103,7 @@ section img {
     }
 }
 
+/* Responsive Desktop */
 @media screen and (min-width: 1280px) {
     body {
         background-size: 700px;
