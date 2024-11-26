@@ -11,17 +11,15 @@ function printPhoto(a) {
     // Iterazion su array di  oggetti
     for (let i = 0; i < a.length; i++) {
         // Estrapolazione e lavorazione dei dati utili
-        let immagine = a[i].url;
-        let id = a[i].id;
-        let titolo = a[i].title;
-        titolo = titolo[0].toUpperCase() + titolo.slice(1);
+        let {url, id, title} = a[i];
+        title = title[0].toUpperCase() + title.slice(1);
         
         // Costruzione del codice da inserire nel main
         textHTMLMain += `
         <div class="ms-card card" data-post-id='${id}'>
             <div class="pin"> <img src="./img/pin.svg" alt=""></div>
-            <section> <img src="${immagine}" alt=""></section>
-            <p class="desc">${titolo}</p>
+            <section> <img src="${url}" alt=""></section>
+            <p class="desc">${title}</p>
         </div>
         `;
 
@@ -29,7 +27,7 @@ function printPhoto(a) {
         textHTMLOver += `
         <div class="over d-none" data-post-id='${id}'>
             <button type="button" class="btn btn-lg btn-light"> CHIUDI </button>
-            <img src="${immagine}" alt="">
+            <img src="${url}" alt="">
         </div>
         `
     }
