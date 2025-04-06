@@ -15,19 +15,21 @@ function printPhoto(a) {
         title = title[0].toUpperCase() + title.slice(1);
         
         // Costruzione del codice da inserire nel main
+        // ${url} non più funzionante perchè hanno buttato giù il sito
         textHTMLMain += `
         <div class="ms-card card" data-post-id='${id}'>
             <div class="pin"> <img src="./img/pin.svg" alt=""></div>
-            <section> <img src="${url}" alt=""></section>
+            <section> <img src="https://placehold.co/600x600/orange/white" alt=""></section>
             <p class="desc">${title}</p>
         </div>
         `;
 
         // Costruzione del codice da inserire nell'over
+        // ${url} non più funzionante perchè hanno buttato giù il sito
         textHTMLOver += `
         <div class="over d-none" data-post-id='${id}'>
             <button type="button" class="btn btn-lg btn-light"> CHIUDI </button>
-            <img src="${url}" alt="">
+            <img src="https://placehold.co/600x600/orange/white" alt="">
         </div>
         `
     }
